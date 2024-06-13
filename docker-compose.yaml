@@ -1,0 +1,12 @@
+version: '3.0'
+
+services:
+  db:
+    container_name: vasya
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: dbph
+      POSTGRES_PASSWORD: root
+      POSTGRES_USER: postgres
+    image: postgres:latest
